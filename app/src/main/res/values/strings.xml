@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">PMDM Tarea 2</string>
+
+    <string name="mario_name">Mario</string>
+    <string name="mario_description">Héroe del Reino Champiñón, famoso fontanero</string>
+    <string name="mario_abilities">Salta alto, puede lanzar bolas de fuego con la Flor de Fuego, y es conocido por su velocidad y agilidad. También puede transformarse en Super Mario, Mario de Fuego, Tanooki Mario, entre otros</string>
+
+    <string name="luigi_name">Luigi</string>
+    <string name="luigi_description">Hermano de Mario, también fontanero</string>
+    <string name="luigi_abilities">Salta más alto que Mario, pero es un poco más lento. Con la Flor de Fuego también puede lanzar bolas de fuego, y tiene una habilidad especial de flotar un poco en el aire durante sus saltos</string>
+
+    <string name="peach_name">Peach</string>
+    <string name="peach_description">Princesa del Reino Champiñón</string>
+    <string name="peach_abilities">Puede flotar en el aire durante cortos periodos gracias a su vestido. Es conocida por su gran habilidad de evasión y por usar corazones para curarse en algunos juegos</string>
+
+    <string name="toad_name">Toad</string>
+    <string name="toad_description">Habitante y guardián del Reino Champiñón, asistente de la Princesa Peach</string>
+    <string name="toad_abilities">Es muy rápido y ágil. Aunque no tiene habilidades de salto tan buenas como Mario o Luigi, su velocidad le permite ser eficaz en muchos niveles</string>
+
+    <string name="toast_details_uploaded_for">Details uploaded for</string>
+    <string name="person_image">Person image</string>
+
 </resources>

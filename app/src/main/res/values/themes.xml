@@ -3,6 +3,66 @@
     <style name="Base.Theme.PMDMTarea2" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+    </style>
+
+    <!-- Style for the RecyclerView -->
+    <style name="RecyclerViewStyle" parent="Base.Theme.PMDMTarea2">
+        <item name="android:dividerHeight">8dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@color/colorBackground</item>
+    </style>
+
+    <!-- Style for character names in Detail -->
+    <style name="PersonDetailsActivity.Name" parent="Base.Theme.PMDMTarea2">
+        <item name="android:textSize">54sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">16dp</item>
+    </style>
+
+    <!-- Style for descriptions in Detail -->
+    <style name="PersonDetailsActivity.Description" parent="Base.Theme.PMDMTarea2">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:paddingTop">8dp</item>
+    </style>
+
+    <!-- Style for Abilities in Detail -->
+    <style name="PersonDetailsActivity.Abilities" parent="Base.Theme.PMDMTarea2">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily">sans-serif-condensed-light</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:justificationMode">inter_word</item>
+    </style>
+
+    <!-- Style for CardView -->
+    <style name="CardViewStyle" parent="Base.Theme.PMDMTarea2">
+        <item name="cardCornerRadius">50dp</item>
+        <item name="cardElevation">10dp</item>
+        <item name="cardBackgroundColor">@color/cardColorBackground</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <!-- Style for CardView text -->
+    <style name="CardViewTextStyle" parent="Base.Theme.PMDMTarea2">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:padding">16dp</item>
     </style>
 
     <style name="Theme.PMDMTarea2" parent="Base.Theme.PMDMTarea2" />

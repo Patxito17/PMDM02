@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Primary colors of the application -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF0000</color>
+
+    <!-- Colors for background and text -->
+    <color name="colorBackground">#D7E7EB</color>
+    <color name="cardColorBackground">#EFD8DF</color>
+    <color name="colorTextPrimary">#3F51B5</color>
+    <color name="colorTextSecondary">#757575</color>
+
 </resources>

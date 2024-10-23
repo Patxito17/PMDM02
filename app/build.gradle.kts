@@ -29,9 +29,22 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
+    }
+
 }
 
 dependencies {
+    implementation(libs.core.splashscreen)
+    implementation(libs.recyclerview)
+    implementation(libs.cardview)
+    implementation (libs.picasso)
+    implementation (libs.navigation.fragment.ktx)
+    implementation (libs.navigation.ui.ktx)
+
 
     implementation(libs.appcompat)
     implementation(libs.material)
