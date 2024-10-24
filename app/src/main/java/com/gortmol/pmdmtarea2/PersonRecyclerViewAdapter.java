@@ -11,11 +11,23 @@ import com.gortmol.pmdmtarea2.databinding.PersonItemCardviewBinding;
 
 import java.util.ArrayList;
 
+/**
+ * Adapter class for binding character data to a RecyclerView.
+ */
 public class PersonRecyclerViewAdapter extends RecyclerView.Adapter<PersonViewHolder> {
 
+    // List of character data to be displayed
     private final ArrayList<PersonData> persons;
+
+    // Context of the activity using this adapter
     private final Context context;
 
+    /**
+     * Constructor for the PersonRecyclerViewAdapter.
+     *
+     * @param persons The list of characters to display.
+     * @param context The context in which the adapter is used.
+     */
     public PersonRecyclerViewAdapter(ArrayList<PersonData> persons, Context context) {
         this.persons = persons;
         this.context = context;
@@ -37,11 +49,17 @@ public class PersonRecyclerViewAdapter extends RecyclerView.Adapter<PersonViewHo
         PersonData currentPerson = this.persons.get(position);
         holder.bind(currentPerson);
 
-        // Set event
+        // Set event listener for item clicks
         holder.itemView.setOnClickListener(view -> personClicked(currentPerson));
     }
 
+    /**
+     * Handle the click event for a character item.
+     *
+     * @param currentPerson The character that was clicked.
+     */
     private void personClicked(PersonData currentPerson) {
+        // Notify the MainActivity that a character was clicked
         ((MainActivity) context).personClicked(currentPerson);
     }
 

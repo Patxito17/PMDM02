@@ -41,9 +41,6 @@ dependencies {
     implementation(libs.core.splashscreen)
     implementation(libs.recyclerview)
     implementation(libs.cardview)
-    implementation (libs.picasso)
-    implementation (libs.navigation.fragment.ktx)
-    implementation (libs.navigation.ui.ktx)
 
 
     implementation(libs.appcompat)

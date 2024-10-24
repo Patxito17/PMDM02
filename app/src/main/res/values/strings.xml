@@ -17,7 +17,13 @@
     <string name="toad_description">Habitante y guardián del Reino Champiñón, asistente de la Princesa Peach</string>
     <string name="toad_abilities">Es muy rápido y ágil. Aunque no tiene habilidades de salto tan buenas como Mario o Luigi, su velocidad le permite ser eficaz en muchos niveles</string>
 
-    <string name="toast_details_uploaded_for">Details uploaded for</string>
-    <string name="person_image">Person image</string>
+    <string name="toast_details_uploaded_for">El personaje seleccionado es</string>
 
+    <string name="person_image">Imagen de la persona</string>
+
+    <string name="menu_about">Acerca de…</string>
+    <string name="about_dialog_message">Aplicación desarrollada por Gabriel Ortega Molina. Versión 1.0.</string>
+
+    <string name="ok">Aceptar</string>
+    <string name="welcome">Bienvenidos al mundo de Mario</string>
 </resources>
