@@ -10,4 +10,64 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <string name="mario_name">Mario</string>
+    <string name="mario_description">Héroe del Reino Champiñón, famoso fontanero</string>
+    <string name="mario_abilities">Salta alto, puede lanzar bolas de fuego con la Flor de Fuego, y es conocido por su velocidad y agilidad. También puede transformarse en Super Mario, Mario de Fuego, Tanooki Mario, entre otros</string>
+
+    <string name="luigi_name">Luigi</string>
+    <string name="luigi_description">Hermano de Mario, también fontanero</string>
+    <string name="luigi_abilities">Salta más alto que Mario, pero es un poco más lento. Con la Flor de Fuego también puede lanzar bolas de fuego, y tiene una habilidad especial de flotar un poco en el aire durante sus saltos</string>
+
+    <string name="peach_name">Peach</string>
+    <string name="peach_description">Princesa del Reino Champiñón</string>
+    <string name="peach_abilities">Puede flotar en el aire durante cortos periodos gracias a su vestido. Es conocida por su gran habilidad de evasión y por usar corazones para curarse en algunos juegos</string>
+
+    <string name="toad_name">Toad</string>
+    <string name="toad_description">Habitante y guardián del Reino Champiñón, asistente de la Princesa Peach</string>
+    <string name="toad_abilities">Es muy rápido y ágil. Aunque no tiene habilidades de salto tan buenas como Mario o Luigi, su velocidad le permite ser eficaz en muchos niveles</string>
+
+    <string name="yoshi_name">Yoshi</string>
+    <string name="yoshi_description">Compinche y fiel amigo de Mario</string>
+    <string name="yoshi_abilities">Puede comer enemigos con su larga lengua, correr rápidamente y saltar alto. También puede transformarse en diferentes colores con habilidades especiales</string>
+
+    <string name="bowser_name">Bowser</string>
+    <string name="bowser_description">Rey de los Koopas y archienemigo de Mario</string>
+    <string name="bowser_abilities">Fuerza extraordinaria, puede lanzar bolas de fuego y realizar ataques giratorios. Es conocido por su gran resistencia y habilidad para crecer a tamaños gigantescos</string>
+
+    <string name="wario_name">Wario</string>
+    <string name="wario_description">Antihéroe rival de Mario</string>
+    <string name="wario_abilities">Super fuerza, gran resistencia y puede realizar el ataque giratorio. Es conocido por su codicia y sus habilidades poco convencionales</string>
+
+    <string name="donkey_kong_name">Donkey Kong</string>
+    <string name="donkey_kong_description">Gorila gigante y amigo de Mario</string>
+    <string name="donkey_kong_abilities">Increíble fuerza y habilidad para lanzar barriles. Puede realizar saltos altos y balancearse en lianas</string>
+
+    <string name="daisy_name">Daisy</string>
+    <string name="daisy_description">Princesa del Reino Sarasaland</string>
+    <string name="daisy_abilities">Agilidad y habilidad para realizar saltos altos. Conocida por su valentía y espíritu aventurero</string>
+
+    <string name="rosalina_name">Rosalina</string>
+    <string name="rosalina_description">Guardiana del cosmos y madre de los Lumas</string>
+    <string name="rosalina_abilities">Puede levitar, controlar el tiempo y utilizar magia cósmica. Es capaz de manejar objetos y tiene una conexión especial con las estrellas y los Lumas</string>
+
+    <string name="toadette_name">Toadette</string>
+    <string name="toadette_description">Amiga de Toad y aventurera del Reino Champiñón</string>
+    <string name="toadette_abilities">Agilidad y habilidades de salto. Con una supercorona puede transformarse en Peachette, adquiriendo habilidades similares a las de la Princesa Peach</string>
+
+    <string name="bowser_jr_name">Bowser Jr.</string>
+    <string name="bowser_jr_description">Hijo de Bowser, siempre intenta ayudar a su padre a derrotar a Mario</string>
+    <string name="bowser_jr_abilities">Puede utilizar su pincel mágico para crear obstáculos, lanzar bolas de fuego y pilotar su nave. Es ágil y también sabe disfrazarse para engañar a sus enemigos</string>
+
+   <string name="toast_details_uploaded_for">El personaje seleccionado es</string>
+
+    <string name="character_image">Imagen del personaje</string>
+
+    <string name="menu_about">Acerca de…</string>
+    <string name="about_dialog_message">Aplicación desarrollada por Gabriel Ortega Molina. Versión 1.0.</string>
+
+    <string name="ok">Aceptar</string>
+    <string name="welcome">Bienvenidos al mundo de Mario</string>
+    <string name="text_app_name">App name</string>
+
 </resources>

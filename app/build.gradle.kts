@@ -31,10 +31,14 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        dataBinding = true
     }
 }
 
 dependencies {
+
+    implementation(libs.recyclerview)
+    implementation(libs.cardview)
 
     implementation(libs.appcompat)
     implementation(libs.material)
