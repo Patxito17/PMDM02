@@ -26,7 +26,7 @@
     </style>
 
     <!-- Style for character names in Detail -->
-    <style name="PersonDetailsActivity.Name" parent="Theme.SuperMarioBrosApp">
+    <style name="CharacterDetailsFragment.Name" parent="Theme.SuperMarioBrosApp">
         <item name="android:textSize">54sp</item>
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:textStyle">bold</item>
@@ -35,7 +35,7 @@
     </style>
 
     <!-- Style for descriptions in Detail -->
-    <style name="PersonDetailsActivity.Description" parent="Theme.SuperMarioBrosApp">
+    <style name="CharacterDetailsFragment.Description" parent="Theme.SuperMarioBrosApp">
         <item name="android:textSize">26sp</item>
         <item name="android:gravity">center</item>
         <item name="android:fontFamily">sans-serif-medium</item>
@@ -44,7 +44,7 @@
     </style>
 
     <!-- Style for Abilities in Detail -->
-    <style name="PersonDetailsActivity.Abilities" parent="Theme.SuperMarioBrosApp">
+    <style name="CharacterDetailsFragment.Abilities" parent="Theme.SuperMarioBrosApp">
         <item name="android:textSize">20sp</item>
         <item name="android:fontFamily">sans-serif-condensed-light</item>
         <item name="android:paddingTop">16dp</item>

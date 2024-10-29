@@ -1,15 +1,12 @@
-package com.gortmol.supermariobrosapp.ui.home;
+package com.gortmol.supermariobrosapp;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.gortmol.supermariobrosapp.CharacterData;
 import com.gortmol.supermariobrosapp.databinding.ItemCardviewBinding;
 
 import java.util.ArrayList;

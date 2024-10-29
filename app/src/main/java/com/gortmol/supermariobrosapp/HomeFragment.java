@@ -1,5 +1,6 @@
-package com.gortmol.supermariobrosapp.ui.home;
+package com.gortmol.supermariobrosapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,13 +8,10 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.gortmol.supermariobrosapp.CharacterData;
-import com.gortmol.supermariobrosapp.R;
 import com.gortmol.supermariobrosapp.databinding.FragmentHomeBinding;
 
 import java.util.ArrayList;
@@ -30,6 +28,7 @@ public class HomeFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         return binding.getRoot();
+
     }
 
     @Override
@@ -62,5 +61,15 @@ public class HomeFragment extends Fragment {
     }
 
     public void characterSelected(CharacterData currentCharacter, View view) {
+        // Create an intent to start the PersonDetailsActivity
+        Intent intent = new Intent(this.getContext(), CharacterDetailsFragment.class);
+        // Pass the selected character's data to the next activity
+        intent.putExtra("image", currentCharacter.getImage());
+        intent.putExtra("name", currentCharacter.getName());
+        intent.putExtra("description", currentCharacter.getDescription());
+        intent.putExtra("abilities", currentCharacter.getAbilities());
+        // Start the CharacterDetailsFragment
+        Navigation.findNavController(view).navigate(R.id.nav_characterDetails, intent.getExtras());
+
     }
 }

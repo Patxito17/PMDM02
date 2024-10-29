@@ -33,6 +33,7 @@
                 style="@style/CardViewTextStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="@string/mario_name"
                 android:textSize="28sp" />
         </LinearLayout>

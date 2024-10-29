@@ -1,9 +1,8 @@
-package com.gortmol.supermariobrosapp.ui.home;
+package com.gortmol.supermariobrosapp;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.gortmol.supermariobrosapp.CharacterData;
 import com.gortmol.supermariobrosapp.databinding.ItemCardviewBinding;
 
 public class CharacterViewHolder extends RecyclerView.ViewHolder{
