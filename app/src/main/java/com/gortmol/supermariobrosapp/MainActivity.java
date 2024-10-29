@@ -2,9 +2,12 @@ package com.gortmol.supermariobrosapp;
 
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -52,6 +55,39 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+
+    /**
+     * Handles item selections in the options menu.
+     *
+     * @param item The menu item that was selected.
+     * @return true if the menu item is handled, false otherwise.
+     */
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        // Handle item selection in the options menu
+        if (item.getItemId() == R.id.menu_about) {
+            // Show the 'About' dialog when the About menu item is selected
+            showAboutDialog();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    /**
+     * Displays an 'About' dialog with information about the app.
+     */
+    private void showAboutDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.menu_about)
+                .setMessage(R.string.about_dialog_message)
+                .setIcon(R.drawable.super_mario_ia)
+                .setPositiveButton(R.string.ok, (dialog, which) -> {
+                    // Close the dialog when 'OK' is clicked
+                    dialog.dismiss();
+                });
+        builder.create().show();
+    }
+
 
     @Override
     public boolean onSupportNavigateUp() {
