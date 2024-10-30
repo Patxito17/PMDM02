@@ -69,6 +69,9 @@
     <string name="welcome">Bienvenidos al mundo de Mario</string>
     <string name="text_app_name">App name</string>
     <string name="character_list">Lista de personajes</string>
-    <string name="settings">Configuración</string>
+    <string name="settings">Ajustes</string>
+    <string name="language">Idioma</string>
+    <string name="english">Inglés</string>
+    <string name="spanish">Español</string>
 
 </resources>

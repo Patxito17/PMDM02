@@ -39,6 +39,7 @@ dependencies {
 
     implementation(libs.recyclerview)
     implementation(libs.cardview)
+    implementation(libs.preference)
 
     implementation(libs.appcompat)
     implementation(libs.material)
