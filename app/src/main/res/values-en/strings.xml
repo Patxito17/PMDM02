@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Super Mario Bros App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Gabriel Ortega Molina</string>
+    <string name="nav_header_subtitle">DAM - PMDM02</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Super Mario Bros App</string>
+    <string name="menu_characterDetails">Character Details</string>
+
+    <string name="mario_name">Mario</string>
+    <string name="mario_description">Hero of the Mushroom Kingdom, famous plumber</string>
+    <string name="mario_abilities">Jumps high, can throw fireballs with the Fire Flower, and is known for his speed and agility. He can also transform into Super Mario, Fire Mario, Tanooki Mario, among others</string>
+
+    <string name="luigi_name">Luigi</string>
+    <string name="luigi_description">Mario\'s brother, also a plumber</string>
+    <string name="luigi_abilities">Jumps higher than Mario, but is a bit slower. With the Fire Flower, he can also throw fireballs, and has a special ability to float a bit in the air during his jumps</string>
+
+    <string name="peach_name">Peach</string>
+    <string name="peach_description">Princess of the Mushroom Kingdom</string>
+    <string name="peach_abilities">Can float in the air for short periods thanks to her dress. She is known for her great evasion skills and for using hearts to heal herself in some games</string>
+
+    <string name="toad_name">Toad</string>
+    <string name="toad_description">Inhabitant and guardian of the Mushroom Kingdom, assistant to Princess Peach</string>
+    <string name="toad_abilities">Very fast and agile. Although he doesn\'t have as good jumping abilities as Mario or Luigi, his speed allows him to be effective in many levels</string>
+
+    <string name="yoshi_name">Yoshi</string>
+    <string name="yoshi_description">Companion and loyal friend of Mario</string>
+    <string name="yoshi_abilities">Can eat enemies with his long tongue, run quickly, and jump high. He can also transform into different colors with special abilities</string>
+
+    <string name="bowser_name">Bowser</string>
+    <string name="bowser_description">King of the Koopas and arch-nemesis of Mario</string>
+    <string name="bowser_abilities">Extraordinary strength, can throw fireballs and perform spinning attacks. Known for his great endurance and ability to grow to gigantic sizes</string>
+
+    <string name="wario_name">Wario</string>
+    <string name="wario_description">Antihero rival of Mario</string>
+    <string name="wario_abilities">Super strength, great endurance, and can perform a spinning attack. Known for his greed and unconventional skills</string>
+
+    <string name="donkey_kong_name">Donkey Kong</string>
+    <string name="donkey_kong_description">Giant gorilla and friend of Mario</string>
+    <string name="donkey_kong_abilities">Incredible strength and ability to throw barrels. Can perform high jumps and swing on vines</string>
+
+    <string name="daisy_name">Daisy</string>
+    <string name="daisy_description">Princess of Sarasaland</string>
+    <string name="daisy_abilities">Agility and ability to perform high jumps. Known for her bravery and adventurous spirit</string>
+
+    <string name="rosalina_name">Rosalina</string>
+    <string name="rosalina_description">Guardian of the cosmos and mother of the Lumas</string>
+    <string name="rosalina_abilities">Can levitate, control time, and use cosmic magic. Able to manipulate objects and has a special connection with stars and Lumas</string>
+
+    <string name="toadette_name">Toadette</string>
+    <string name="toadette_description">Friend of Toad and adventurer of the Mushroom Kingdom</string>
+    <string name="toadette_abilities">Agility and jumping skills. With a super crown, she can transform into Peachette, gaining abilities similar to Princess Peach</string>
+
+    <string name="bowser_jr_name">Bowser Jr.</string>
+    <string name="bowser_jr_description">Son of Bowser, always trying to help his father defeat Mario</string>
+    <string name="bowser_jr_abilities">Can use his magic brush to create obstacles, throw fireballs, and pilot his ship. Agile and also knows how to disguise himself to trick his enemies</string>
+
+   <string name="toast_details_uploaded_for">The selected character is</string>
+
+    <string name="character_image">Character image</string>
+
+    <string name="menu_about">About…</string>
+    <string name="about_dialog_message">Application developed by Gabriel Ortega Molina. Version 1.0.</string>
+
+    <string name="ok">OK</string>
+    <string name="welcome">Welcome to the world of Mario</string>
+    <string name="text_app_name">App name</string>
+    <string name="character_list">Character list</string>
+    <string name="settings">Settings</string>
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="spanish">Spanish</string>
+
+</resources>
