@@ -73,5 +73,6 @@
     <string name="language">Language</string>
     <string name="english">English</string>
     <string name="spanish">Spanish</string>
+    <string name="language_changed_successfully">Se ha configurado correctamente el idioma a Español</string>
 
 </resources>
