@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId = "com.gortmol.supermariobrosapp"
-        minSdk = 26
+        minSdk = 31
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -37,6 +37,7 @@ android {
 
 dependencies {
 
+    implementation(libs.core.splashscreen)
     implementation(libs.recyclerview)
     implementation(libs.cardview)
     implementation(libs.preference)

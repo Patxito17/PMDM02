@@ -11,7 +11,14 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+
+        <!-- SplashScreen configuration-->
+        <item name="postSplashScreenTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/logo_app</item>
+        <item name="android:windowSplashScreenAnimationDuration">2500</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/white</item>
+        <item name="android:windowSplashScreenBackground">@color/white</item>
+
     </style>
 
     <style name="Theme.SuperMarioBrosApp.NoActionBar">
@@ -66,6 +73,7 @@
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:padding">16dp</item>
     </style>
+
 
     <style name="Theme.SuperMarioBrosApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 

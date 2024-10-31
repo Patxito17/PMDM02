@@ -18,7 +18,7 @@
         android:layout_height="150dp"
         android:contentDescription="@string/nav_header_desc"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@drawable/super_mario_ia" />
+        app:srcCompat="@drawable/logo_app" />
 
     <TextView
         android:layout_width="wrap_content"

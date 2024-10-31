@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.menu_about)  // Set dialog title
                 .setMessage(R.string.about_dialog_message)  // Set dialog message
-                .setIcon(R.drawable.super_mario_ia)  // Set dialog icon
+                .setIcon(R.drawable.logo_app)  // Set dialog icon
                 .setPositiveButton(R.string.ok, (dialog, which) -> {
                     // Close the dialog when 'OK' is clicked
                     dialog.dismiss();
