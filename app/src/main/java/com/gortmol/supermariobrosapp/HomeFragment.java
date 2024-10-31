@@ -17,21 +17,37 @@ import com.gortmol.supermariobrosapp.databinding.FragmentHomeBinding;
 
 import java.util.ArrayList;
 
+/**
+ * Fragment representing the home screen displaying a grid of characters.
+ * Handles loading character data, setting up the RecyclerView, and managing click events.
+ */
 public class HomeFragment extends Fragment {
 
-    private FragmentHomeBinding binding;
-    private ArrayList<CharacterData> characterList;
-    private CharacterRecyclerViewAdapter adapter;
+    private FragmentHomeBinding binding;  // Binding instance for accessing layout views
+    private ArrayList<CharacterData> characterList;  // List of character data objects
+    private CharacterRecyclerViewAdapter adapter;  // Adapter for managing character data in RecyclerView
 
+    /**
+     * Called to initialize the fragment's UI.
+     *
+     * @param inflater           LayoutInflater for inflating views in the fragment
+     * @param container          Parent container this fragment belongs to
+     * @param savedInstanceState Saved state for fragment recreation
+     * @return Root view of the fragment's layout
+     */
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         return binding.getRoot();
-
     }
 
+    /**
+     * Called immediately after onCreateView, used to set up UI components and data binding.
+     *
+     * @param view               Root view returned by onCreateView
+     * @param savedInstanceState Saved state for fragment recreation
+     */
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -39,6 +55,7 @@ public class HomeFragment extends Fragment {
         // Create and populate the list of characters with predefined data
         loadCharacters();
 
+        // Initialize RecyclerView with a grid layout and set the adapter
         adapter = new CharacterRecyclerViewAdapter(characterList, this);
         binding.recyclerView.setLayoutManager(new GridLayoutManager(this.getContext(), 2));
         binding.recyclerView.setAdapter(adapter);
@@ -47,6 +64,10 @@ public class HomeFragment extends Fragment {
         Snackbar.make(binding.getRoot(), R.string.welcome, Snackbar.LENGTH_SHORT).show();
     }
 
+    /**
+     * Populates the characterList with predefined character data.
+     * Each CharacterData object contains details such as image, name, description, and abilities.
+     */
     private void loadCharacters() {
         characterList = new ArrayList<>();
         characterList.add(new CharacterData(R.drawable.mario, (String) getText(R.string.mario_name), (String) getText(R.string.mario_description), (String) getText(R.string.mario_abilities)));
@@ -63,16 +84,24 @@ public class HomeFragment extends Fragment {
         characterList.add(new CharacterData(R.drawable.bowser_jr, (String) getText(R.string.bowser_jr_name), (String) getText(R.string.bowser_jr_description), (String) getText(R.string.bowser_jr_abilities)));
     }
 
+    /**
+     * Handles the event when a character is selected.
+     * Creates an intent to navigate to CharacterDetailsFragment and passes the character's data.
+     *
+     * @param currentCharacter The selected character data.
+     * @param view             The view triggering the event.
+     */
     public void characterSelected(CharacterData currentCharacter, View view) {
-        // Create an intent to start the PersonDetailsActivity
+        // Create an intent to start the CharacterDetailsFragment
         Intent intent = new Intent(this.getContext(), CharacterDetailsFragment.class);
-        // Pass the selected character's data to the next activity
+
+        // Pass the selected character's data to the next fragment
         intent.putExtra("image", currentCharacter.getImage());
         intent.putExtra("name", currentCharacter.getName());
         intent.putExtra("description", currentCharacter.getDescription());
         intent.putExtra("abilities", currentCharacter.getAbilities());
+
         // Start the CharacterDetailsFragment
         Navigation.findNavController(view).navigate(R.id.nav_characterDetails, intent.getExtras());
-
     }
 }

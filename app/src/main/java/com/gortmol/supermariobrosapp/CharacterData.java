@@ -1,5 +1,8 @@
 package com.gortmol.supermariobrosapp;
 
+/**
+ * This class represents a video game character with an image, name, description, and abilities.
+ */
 public class CharacterData {
     // Image resource ID representing the character's image
     private final int image;
@@ -14,7 +17,7 @@ public class CharacterData {
     private final String abilities;
 
     /**
-     * Constructs a new PersonData object with the given parameters.
+     * Constructs a new CharacterData object with the given parameters.
      *
      * @param image       The resource ID of the character's image.
      * @param name        The name of the character.
