@@ -54,11 +54,9 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
             if (languageSwitch) {
                 // Set application locale to English if switch is turned on
                 appLocales = LocaleListCompat.forLanguageTags("en");
-                // Show a success Toast for language change
             } else {
                 // Set application locale to Spanish if switch is turned off
                 appLocales = LocaleListCompat.forLanguageTags("es");
-                // Show a success Toast for language change
             }
             AppCompatDelegate.setApplicationLocales(appLocales);
             Toast.makeText(getActivity(), R.string.language_changed_successfully, Toast.LENGTH_SHORT).show();
