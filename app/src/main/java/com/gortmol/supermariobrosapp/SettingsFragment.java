@@ -1,5 +1,6 @@
 package com.gortmol.supermariobrosapp;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -9,12 +10,15 @@ import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.os.LocaleListCompat;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
+import androidx.preference.PreferenceManager;
 import androidx.preference.SwitchPreferenceCompat;
 
 /**
  * Fragment that manages the settings of the app, particularly the language switch functionality.
  */
 public class SettingsFragment extends PreferenceFragmentCompat implements Preference.OnPreferenceChangeListener {
+
+    private static final String LANGUAGE_PREF_KEY = "language_switch";  // Key for SharedPreferences
 
     /**
      * Initializes the preferences from the specified XML resource file.
@@ -33,6 +37,11 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         // Ensure that the preference is not null before setting the listener
         assert switchPreference != null;
 
+        // Set the initial state of the switch based on the stored preference
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(requireContext());
+        boolean isEnglish = sharedPreferences.getBoolean(LANGUAGE_PREF_KEY, false);
+        switchPreference.setChecked(isEnglish);
+
         // Set the onPreferenceChangeListener to detect changes in switch preference
         switchPreference.setOnPreferenceChangeListener(this);
     }
@@ -47,18 +56,19 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
     @Override
     public boolean onPreferenceChange(@NonNull Preference preference, Object newValue) {
         // Check if the changed preference is the language switch
-        if (preference.getKey().equals("language_switch")) {
+        if (preference.getKey().equals(LANGUAGE_PREF_KEY)) {
             boolean languageSwitch = (boolean) newValue;  // Cast newValue to boolean
 
-            LocaleListCompat appLocales;
-            if (languageSwitch) {
-                // Set application locale to English if switch is turned on
-                appLocales = LocaleListCompat.forLanguageTags("en");
-            } else {
-                // Set application locale to Spanish if switch is turned off
-                appLocales = LocaleListCompat.forLanguageTags("es");
-            }
+            // Save the language preference in SharedPreferences
+            SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(requireContext());
+            sharedPreferences.edit().putBoolean(LANGUAGE_PREF_KEY, languageSwitch).apply();
+
+            // Set the application locale based on the switch value
+            LocaleListCompat appLocales = languageSwitch ?
+                    LocaleListCompat.forLanguageTags("en") :
+                    LocaleListCompat.forLanguageTags("es");
             AppCompatDelegate.setApplicationLocales(appLocales);
+
             Toast.makeText(getActivity(), R.string.language_changed_successfully, Toast.LENGTH_SHORT).show();
             return true;  // Indicate that the preference value was updated
         }
