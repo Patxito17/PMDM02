@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.GridLayoutManager;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.gortmol.supermariobrosapp.databinding.FragmentHomeBinding;
 
 import java.util.ArrayList;
@@ -59,9 +58,6 @@ public class HomeFragment extends Fragment {
         adapter = new CharacterRecyclerViewAdapter(characterList, this);
         binding.recyclerView.setLayoutManager(new GridLayoutManager(this.getContext(), 2));
         binding.recyclerView.setAdapter(adapter);
-
-        // Show a SnackBar notification indicating that the list of characters has been loaded
-        Snackbar.make(binding.getRoot(), R.string.welcome, Snackbar.LENGTH_SHORT).show();
     }
 
     /**

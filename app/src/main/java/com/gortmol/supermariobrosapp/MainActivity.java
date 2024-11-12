@@ -14,6 +14,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 import com.gortmol.supermariobrosapp.databinding.ActivityMainBinding;
 
 /**
@@ -56,6 +57,10 @@ public class MainActivity extends AppCompatActivity {
 
         // Connect navigation view to the navigation controller
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        // Show a SnackBar notification indicating that the list of characters has been loaded
+        Snackbar.make(binding.getRoot(), R.string.welcome, Snackbar.LENGTH_SHORT).show();
+
     }
 
     /**
