@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+
+    <!-- Light theme -->
+    <color name="mario_red">#D32F2F</color> <!-- Rojo vibrante -->
+    <color name="mario_dark_red">#B71C1C</color> <!-- Rojo oscuro -->
+    <color name="mario_blue">#1976D2</color> <!-- Azul intenso -->
+    <color name="mario_light_blue">#64B5F6</color> <!-- Azul claro -->
+    <color name="mario_gold">#FFD700</color> <!-- Dorado, para iconos como monedas -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Night theme -->
+    <color name="mario_red_night">#A52828</color> <!-- Rojo oscuro para fondo oscuro -->
+    <color name="mario_dark_red_night">#7F1B1B</color> <!-- Rojo aún más oscuro -->
+    <color name="mario_blue_night">#1565C0</color> <!-- Azul más oscuro -->
+    <color name="mario_light_blue_night">#4B90E2</color> <!-- Azul intermedio -->
+    <color name="mario_gold_night">#FFC107</color> <!-- Dorado apagado, más suave para modo oscuro -->
+
 </resources>
