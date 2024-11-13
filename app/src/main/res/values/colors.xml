@@ -2,19 +2,20 @@
 <resources>
 
     <!-- Light theme -->
-    <color name="mario_red">#D32F2F</color> <!-- Rojo vibrante -->
-    <color name="mario_dark_red">#B71C1C</color> <!-- Rojo oscuro -->
-    <color name="mario_blue">#1976D2</color> <!-- Azul intenso -->
-    <color name="mario_light_blue">#64B5F6</color> <!-- Azul claro -->
-    <color name="mario_gold">#FFD700</color> <!-- Dorado, para iconos como monedas -->
+    <color name="mario_red">#D32F2F</color>
+    <color name="mario_dark_red">#B71C1C</color>
+    <color name="mario_blue">#1976D2</color>
+    <color name="mario_light_blue">#64B5F6</color>
+    <color name="mario_gold">#FFD700</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
     <!-- Night theme -->
-    <color name="mario_red_night">#A52828</color> <!-- Rojo oscuro para fondo oscuro -->
-    <color name="mario_dark_red_night">#7F1B1B</color> <!-- Rojo aún más oscuro -->
-    <color name="mario_blue_night">#1565C0</color> <!-- Azul más oscuro -->
-    <color name="mario_light_blue_night">#4B90E2</color> <!-- Azul intermedio -->
-    <color name="mario_gold_night">#FFC107</color> <!-- Dorado apagado, más suave para modo oscuro -->
+    <color name="mario_red_night">#A52828</color>
+    <color name="mario_dark_red_night">#7F1B1B</color>
+    <color name="mario_blue_night">#1565C0</color>
+    <color name="mario_light_blue_night">#4B90E2</color>
+    <color name="mario_gold_night">#FFC107
+    </color>
 
 </resources>

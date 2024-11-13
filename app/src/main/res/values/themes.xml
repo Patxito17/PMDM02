@@ -18,7 +18,7 @@
         <item name="android:windowSplashScreenAnimationDuration">2500</item>
         <item name="android:windowSplashScreenIconBackgroundColor">@color/white</item>
         <item name="android:windowSplashScreenBackground">@color/mario_gold
-        </item> <!-- Fondo dorado para monedas -->
+        </item>
     </style>
 
     <style name="Theme.SuperMarioBrosApp.NoActionBar">
